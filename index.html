@@ -4,33 +4,42 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>hyde's labo</title>
+    <title>Feel Japan Project</title>
     <!-- BootstrapのCSS読み込み -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
     <!-- jQuery読み込み -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
     <style>
+    
+      body{
+        padding-top:70px
+      }
+      footer{
+        padding-top:70px;
+      }
       .clickable {
         cursor: pointer;
       }
-      .navbar {
-        border-radius: 0; 
-      }
+
       .jumbotron{
-        background-image:url(top.jpg);
+        background-image:url(pic/top.jpg);
         background-size:cover;
         background-position:center 10%;
         height: 200px;
-        margin:60px 0px;
       }
       .jumbotron h1{
         color:#fff;
         font-size: 50px;
       }
       div.row{
+        padding-top:90px;
         padding-left:50px;
+        padding-bottom:50px;
       }
       .icon .glyphicon {
         margin-bottom: 10px;
@@ -39,8 +48,15 @@
         color: #555;
         margin-bottom:20px;
       }
-
+      .copyright {
+        padding: 20px 0;
+        font-size: 12px;
+        color: #666;
+      }
       @(max-width: 768px) {
+        .navbar-fixed-top {
+          border-radius: 0;
+        }
         body {
           font-size: 12px;
         }
@@ -67,13 +83,13 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <h2 class="navbar-brand">hyde's labo</h2>
+            <h2 class="navbar-brand" href="">Feel Japan Project</h2>
           </div>
           <div class="collapse navbar-collapse" id="site-menu">
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#news">ニュース</a></li>    
-              <li><a href="#profile">プロフィール</a></li>
-              <li><a href="#opensite">公開サイト</a></li>
+              <li><a href="#profile">プロジェクトリーダー</a></li>
+              <li><a href="#application">作りたいアプリ</a></li>
             </ul>
           </div>
         </div>
@@ -81,7 +97,7 @@
     </header>
     <div class="jumbotron">
       <div class="container">
-        <h1>hyde's labo</h1>
+        <h1>Feel Japan Project</h1>
       </div>
     </div>
     <div class="row" id="news">
@@ -97,25 +113,42 @@
     <div class="row" id="profile">
       <div>
         <div class="icon">
-          <span class="glyphicon glyphicon glyphicon-user" aria-hidden="true">　プロフィール</span>
+          <span class="glyphicon glyphicon glyphicon-user" aria-hidden="true">　プロジェクトリーダー</span>
         </div>
-        <a href="https://github.com/HidehikoNakajima">github</a>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+        <p>ネーム：HidehikoNakajima　（TechAcademy 12期生）</p>
+        <p>　　　　Just Call Me "Hyde（ハイデ）"</p>
+        <p>github：<a href="https://github.com/HidehikoNakajima">https://github.com/HidehikoNakajima</a></p>
+        <p>年齢  ：まだまだ花の30代半ば</p>
+        <p>住まい：神奈川県横浜市（奈良県金魚の町出身）<br/>
+            <a href="pic/tokyo.jpg" data-lightbox="image-1" data-title="My caption">Image #1</a></p>
+        <p>趣味　：旅行
+        <p>　　　　バイク（Triumph Tiger800xc）</p>
+        <p>　　　　自転車（Willier gtr）</p>
+        <p>　　　　写真撮影（Canon Eos M2）
+        <p>　　　　猫のお世話（ユウ♂ 6ヶ月 ノルウェージャンフォレストキャット）</p>
       </div>
     </div>
-    <div class="row" id="opensite">
+
+    <div class="row" id="application">
       <div class="icon">
-        <span class="glyphicon glyphicon-info-sign" aria-hidden="true">公開サイト</span>
+        <span class="glyphicon glyphicon glyphicon-home" aria-hidden="true"> 作りたいアプリ</span>
+        <p>日本は素晴らしい国。</p>
+        <p>もっとたくさんの外国人にきてほしい！！</p>
+        <p>中〇人の爆買いもWellcom（笑）</p>
+        <p>なので、日本行きてー！ってなってもらえるアプリつくりたい！！</p>
+        <p>なんといってもオリンピックあるしね！！</p><br/>
+        <p>・アプリイメージ</p>
+        <p>　すばらしいと思う観光地、風景、お店、もの、人などなどを登録（日本人または訪れた外国人）</p>
+        <p>　それらに「行きたい（いいね、みたいなもの）」投票、コメントできる（外国人）</p>
+        <p>　投票数年間トップになったものに投票してくれた人になんかいいものをあげれたらいいな（広告料とかで）
+        <p>　お散歩コース登録ができて、それも投票対象に。</p>
       </div>
-      <p>c</p>
+
     </div>
+
     <footer>
       <div class="copyright">© 2015 HidehikoNakajima </div>
     </footer>
+    <script language="javascript" type="text/javascript" src="js/lightbox.min.js"></script>
   </body>
 </html>
