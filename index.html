@@ -4,15 +4,118 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap Sample</title>
+    <title>hyde's labo</title>
     <!-- BootstrapのCSS読み込み -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- jQuery読み込み -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style>
+      .clickable {
+        cursor: pointer;
+      }
+      .navbar {
+        border-radius: 0; 
+      }
+      .jumbotron{
+        background-image:url(top.jpg);
+        background-size:cover;
+        background-position:center 10%;
+        height: 200px;
+        margin:60px 0px;
+      }
+      .jumbotron h1{
+        color:#fff;
+        font-size: 50px;
+      }
+      div.row{
+        padding-left:50px;
+      }
+      .icon .glyphicon {
+        margin-bottom: 10px;
+        font-size: 30px;
+        font
+        color: #555;
+        margin-bottom:20px;
+      }
+
+      @(max-width: 768px) {
+        body {
+          font-size: 12px;
+        }
+        h1 {
+          font-size: 30px;
+        }
+        h2 {
+          font-size: 24px;
+        }
+        .panel-title {
+          font-size: 14px;
+        }
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <header>
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-menu">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <h2 class="navbar-brand">hyde's labo</h2>
+          </div>
+          <div class="collapse navbar-collapse" id="site-menu">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#news">ニュース</a></li>    
+              <li><a href="#profile">プロフィール</a></li>
+              <li><a href="#opensite">公開サイト</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="jumbotron">
+      <div class="container">
+        <h1>hyde's labo</h1>
+      </div>
+    </div>
+    <div class="row" id="news">
+      <div>
+        <div class="icon">
+          <span class="glyphicon glyphicon-info-sign" aria-hidden="true">　ニュース</span>
+        </div>
+        <p>2015/12/26　　 サイトを公開しました。</p>
+        <br/>
+        <br/>
+      </div>
+    </div>
+    <div class="row" id="profile">
+      <div>
+        <div class="icon">
+          <span class="glyphicon glyphicon glyphicon-user" aria-hidden="true">　プロフィール</span>
+        </div>
+        <a href="https://github.com/HidehikoNakajima">github</a>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+      </div>
+    </div>
+    <div class="row" id="opensite">
+      <div class="icon">
+        <span class="glyphicon glyphicon-info-sign" aria-hidden="true">公開サイト</span>
+      </div>
+      <p>c</p>
+    </div>
+    <footer>
+      <div class="copyright">© 2015 HidehikoNakajima </div>
+    </footer>
   </body>
 </html>
