@@ -7,18 +7,18 @@
     <title>Feel Japan Project</title>
     <!-- BootstrapのCSS読み込み -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- LightBoxのCSS読み込み -->
     <link rel="stylesheet" href="css/lightbox.min.css">
     <!-- jQuery読み込み -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-
-    <style>
     
+    <style>
       body{
         padding-top:70px;
-        color: #666;
+        background-color: #DDD;
       }
       footer{
         padding-top:70px;
@@ -43,7 +43,7 @@
       }
         
       .row{
-        padding-top:90px;
+        padding-top:80px;
         padding-left:50px;
         padding-bottom:20px;
       }
@@ -67,16 +67,19 @@
         font-size: 12px;
         color: #666;
       }
+      footer{
+        margin-left:30px;
+      }
+      #map {
+            width: 400px;
+            height: 400px;
+        }
       @media (max-width: 768px) {
         .navbar-fixed-top {
           border-radius: 0;
         }
         body {
           font-size: 12px;
-        }
-
-        h2 {
-          font-size: 24px;
         }
         .panel-title {
           font-size: 14px;
@@ -136,6 +139,20 @@
         <p>github　：　<a href="https://github.com/HidehikoNakajima">https://github.com/HidehikoNakajima</a></p>
         <p>年齢　　：　まだまだ花の30代半ば</p>
         <p>住まい　：　神奈川県横浜市（奈良県金魚の町出身）<br/>
+        <div id="map"></div>
+        <script src="//maps.google.com/maps/api/js?sensor=true"></script>
+        <script src="//raw.githubusercontent.com/HPNeo/gmaps/master/gmaps.js"></script>
+    　   <script>
+          window.onload = function(){
+            var map = new GMaps({
+                div: "#map",//id名
+                lat: 35.170694,//緯度
+                lng: 136.88163699999995,//経度
+                zoom: 14//縮尺
+            });
+          };
+        </script>
+ 
         <p>趣味　　：　旅行
         <p>　　　　　　　バイク（Triumph Tiger800xc）</p>
         <p>　　　　　　　自転車（Willier gtr）</p>
@@ -155,10 +172,10 @@
         <span class="glyphicon glyphicon glyphicon-home" aria-hidden="true"> 作りたいアプリ</span>
 
         <p>・アプリイメージ</p>
-        <p>　すばらしいと思う観光地、風景、お店、もの、人などなどを登録（日本人または訪れた外国人）</p>
-        <p>　それらに「行きたい（いいね、みたいなもの）」投票、コメントできる（外国人）</p>
-        <p>　投票数年間トップになったものに投票してくれた人になんかいいものをあげれたらいいな（広告料とかで）
+        <p>　日本のすばらしいと思う観光地、風景、お店、もの、人などなどを登録（日本人または訪れた外国人）</p>
         <p>　お散歩コース登録ができて、それも投票対象に。</p>
+        <p>　それらに「行きたい（いいね、みたいなもの）」投票、コメントできる（外国人）</p>
+        <p>　英語対応。</p>
       </div>
 
     </div>
@@ -166,6 +183,8 @@
     <footer>
       <div class="copyright">© 2015 HidehikoNakajima </div>
     </footer>
+    
+    <!-- LightBoxのJS読み込み -->
     <script language="javascript" type="text/javascript" src="js/lightbox.min.js"></script>
   </body>
 </html>
